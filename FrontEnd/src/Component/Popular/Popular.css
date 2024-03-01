@@ -1,0 +1,40 @@
+.popular{
+    padding: 0 10%;
+    margin:  30px 0;
+    width: 100%;
+}
+.popular h1{
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+.popular h1::after{
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 4px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+.popular-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    place-content: center;
+}
+.popular-product-cart img{
+    width: 100%;
+}
+.products-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.product-new-price{
+    font-weight: bolder;
+}
+.product-old-price{
+    color: gray;
+}
