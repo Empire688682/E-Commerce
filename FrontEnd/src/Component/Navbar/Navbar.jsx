@@ -8,10 +8,12 @@ const Navbar = () => {
     const [menu, setMenu] = useState("Shop")
   return (
     <div className='navbar'>
+      <NavLink style={{textDecoration:"none"}} to="/">
       <div className="logo">
         <img src={Logo} alt="Logo"/>
         <h1>EMPIRE STORE</h1>
       </div>
+      </NavLink>
       <div className="menu">
         <nav>
             <ul>
