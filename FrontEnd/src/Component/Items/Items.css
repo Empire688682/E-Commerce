@@ -1,0 +1,25 @@
+.item{
+    width: 350px;
+}
+.item-img-con{
+    overflow: hidden;
+}
+.item img{
+    width: 100%;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+.item img:hover{
+    transform: scale(1.1);
+}
+.products-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.product-new-price{
+    font-weight: bolder;
+}
+.product-old-price{
+    color: gray;
+}
