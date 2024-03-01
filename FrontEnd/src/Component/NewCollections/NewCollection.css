@@ -1,0 +1,25 @@
+.new-collection{
+    width: 250px;
+}
+.new-collection-img-con{
+    overflow: hidden;
+}
+.new-collection img{
+    width: 100%;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+.new-collection img:hover{
+    transform: scale(1.1);
+}
+.products-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.product-new-price{
+    font-weight: bolder;
+}
+.product-old-price{
+    color: gray;
+}
