@@ -1,17 +1,19 @@
 import React from 'react'
 import './NewCollection.css';
+import New_Collections_Data from '../Asset/new_collections'
+import Item from '../Items/Item';
 
-const NewCollection = (props) => {
+const NewCollection = () => {
   return (
     <div className='new-collection'>
-        <div className="new-collection-img-con">
-                <img src={props.image} alt='Product' />
-        </div>
-            <p className='product-name'>{props.name}</p>
-            <div className="products-price">
-                <p className="product-new-price">${props.newPrice}</p>
-                <p className="product-old-price">${props.oldPrice}</p>
-            </div>
+      <h1>NEW COLLECTION</h1>
+      <div className="new-collection-product">
+        {
+          New_Collections_Data.map((items, i)=>{
+            return <Item key={i} id={items} image={items.image} name={items.name} newPrice={items.new_price} oldPrice={items.old_price} />
+          })
+        }
+      </div>
     </div>
   )
 }

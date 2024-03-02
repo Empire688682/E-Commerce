@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../Hero/Hero';
 import Popular from '../Popular/Popular'
 import Offer from '../Offer/Offer';
-import NewProduct from '../NewProduct/NewProduct';
+import NewCollection from '../NewCollections/NewCollection';
 
 
 const Shop = () => {
@@ -11,7 +11,7 @@ const Shop = () => {
       <Hero/>
       <Popular/>
       <Offer/>
-      <NewProduct/>
+      <NewCollection/>
     </div>
   )
 }
