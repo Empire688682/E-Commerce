@@ -25,7 +25,7 @@ const Navbar = () => {
         </nav>
       </div>
       <div className="login-cart">
-        <button><NavLink style={{textDecoration:"none"}} to="/loginSignup">Login </NavLink></button>
+        <NavLink style={{textDecoration:"none"}} to="/loginSignup"> <button>Login</button> </NavLink>
         <div className="cart-con">
         <NavLink style={{textDecoration:"none"}} to="/cart"><img src={Cart} alt="Img"/></NavLink>
         <div className="menu-count">0</div>
