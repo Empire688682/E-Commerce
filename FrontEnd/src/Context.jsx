@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
 import all_Product from '../src/Component/Asset/all_product'
 
-const shopContext = React.createContext();
+const ShopContext = React.createContext();
+
 export const ShopProvider = ({children}) =>{
-    <shopContext.Provider value={{all_Product}}>
+    return <ShopContext.Provider value={{all_Product}}>
         {children}
-    </shopContext.Provider>
+    </ShopContext.Provider>
 }
 
 export const useGlobalContext = () =>{
-    return useContext(shopContext)
+    return useContext(ShopContext)
 }

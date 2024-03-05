@@ -1,0 +1,18 @@
+.shop-category{
+    width: 90%;
+    margin: auto;
+}
+.shop-category-banner{
+    width: 100%;
+}
+.shop-category-banner img{
+    width: 100%;
+}
+.shop-cartegory-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 20px 0;
+}
