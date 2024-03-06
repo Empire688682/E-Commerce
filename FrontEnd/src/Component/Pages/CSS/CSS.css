@@ -8,6 +8,23 @@
 .shop-category-banner img{
     width: 100%;
 }
+.category-header{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.category-header .left{
+    font-weight: bold;
+}
+.category-header .right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 .shop-cartegory-cart{
     display: flex;
     align-items: center;

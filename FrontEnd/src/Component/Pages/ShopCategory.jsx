@@ -2,9 +2,8 @@ import React from 'react'
 import './CSS/CSS.css';
 import { useGlobalContext } from '../../Context';
 import Item from '../Items/Item';
-import Men_Banner from '../Asset/banner_mens.png'
-import Women_Banner from '../Asset/banner_women.png'
-import Kids_Banner from '../Asset/banner_kids.png'
+import Dropdown_Icon from '../Asset/dropdown_icon.png'
+ 
 const ShopCategory = (props) => {
   const {all_Product} = useGlobalContext();
   console.log(all_Product)
@@ -13,8 +12,18 @@ const ShopCategory = (props) => {
       <div className="shop-category-banner">
         {
           // eslint-disable-next-line react/prop-types
-          props.banner === "men"? <img src={Men_Banner} /> : props.banner === "women" ? <img src={Women_Banner} />:<img src={Kids_Banner} />
+          <img src={props.banner} alt='Banner' title='Cat-Bnner' />
         }
+
+        <div className="category-header">
+          <div className="left">
+            1 to 12
+          </div>
+          <div className="right">
+            <p>Sort</p>
+            <img src={Dropdown_Icon}/>
+          </div>
+        </div>
       </div>
       <div className="shop-cartegory-cart">
       {
