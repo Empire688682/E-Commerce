@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className='footer'>
-      <NavLink to="/" style={{textDecoration:"none", color:"black"}}><div className="footer-logo">
+      <NavLink onClick={window.scrollTo(0,0)} to="/" style={{textDecoration:"none", color:"black"}}><div className="footer-logo">
         <img src={Logo_Icon} />
         <h1>Empire Store</h1>
       </div></NavLink>

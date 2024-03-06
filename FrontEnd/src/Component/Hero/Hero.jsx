@@ -6,7 +6,8 @@ import Arrow_Icon from '../Asset/arrow.png'
 
 const Hero = () => {
   return (
-    <div className='Hero'>
+   <div className='Hero-con'>
+     <div className='Hero'>
       <div className="Hero-left">
         <h1>NEW ARRIVALS ONLY</h1>
         <div>
@@ -27,6 +28,7 @@ const Hero = () => {
         <img src={Hero_Image}/>
       </div>
     </div>
+   </div>
   )
 }
 

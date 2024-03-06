@@ -1,0 +1,21 @@
+.description-con{
+    width: 80%;
+    margin: 40px auto;
+}
+.head{
+    display: flex;
+    align-items: center;
+}
+.head .D-heading{
+    font-weight: 700;
+    padding: 20px;
+    border: 1px solid gray;
+}
+.head .reviews{
+    padding: 20px;
+    border: 1px solid gray;
+}
+.description-con-description{
+    padding: 20px;
+    border: 1px solid gray;
+}

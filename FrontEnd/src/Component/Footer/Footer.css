@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .footer{
     padding: 10px 10%;
     text-align: center;

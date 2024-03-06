@@ -1,13 +1,13 @@
-.popular{
-    margin: 50px 0;
-    padding: 0 10%;
+.related-product{
+   width: 80%; 
+   margin: 40px auto;
 }
-.popular h1{
+.related-product h1{
     text-align: center;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
-.popular h1::after{
+.related-product h1::before{
     position: absolute;
     content: '';
     width: 120px;
@@ -17,10 +17,10 @@
     transform: translateX(-50%);
     bottom: -5px;
 }
-.popular-product{
+.related-product-cart{
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,0 +1,9 @@
+.product-brief{
+    width: 80%;
+    margin: 20px auto;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}

@@ -18,9 +18,9 @@
     bottom: -5px;
 }
 .new-collection-product{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-    place-content: center;
+    flex-wrap: wrap;
 }

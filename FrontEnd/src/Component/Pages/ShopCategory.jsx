@@ -6,7 +6,6 @@ import Dropdown_Icon from '../Asset/dropdown_icon.png'
  
 const ShopCategory = (props) => {
   const {all_Product} = useGlobalContext();
-  console.log(all_Product)
   return (
     <div className='shop-category'>
       <div className="shop-category-banner">
@@ -30,7 +29,7 @@ const ShopCategory = (props) => {
         all_Product.map((items, i) =>{
           // eslint-disable-next-line react/prop-types
           if(items.category === props.category){
-            return <Item key={i}  id={items} image={items.image} name={items.name} newPrice={items.new_price} oldPrice={items.old_price}/>
+            return <Item key={i}  id={items.id} image={items.image} name={items.name} newPrice={items.new_price} oldPrice={items.old_price}/>
           }
           else return null
         })
