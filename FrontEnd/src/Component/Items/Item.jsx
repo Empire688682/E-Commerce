@@ -6,7 +6,7 @@ const Item = (props) => {
   return (
     <div className="item">
             <div className="item-img-con">
-            <NavLink to={`/product/${props.id}`}><img src={props.image} onClick={{scrollY:"20px"}}/></NavLink>
+            <NavLink to={`/product/${props.id}`}><img src={props.image} onClick={()=> window.scroll(0, 0)}/></NavLink>
             </div>
             <p className='product-name'>{props.name}</p>
             <div className="products-price">
