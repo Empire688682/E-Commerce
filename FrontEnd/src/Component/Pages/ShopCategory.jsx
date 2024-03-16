@@ -11,7 +11,7 @@ const ShopCategory = (props) => {
       <div className="shop-category-banner">
         {
           // eslint-disable-next-line react/prop-types
-          <img src={props.banner} alt='Banner' title='Cat-Bnner' />
+          <img src={props.banner} alt='Banner' title='Cat-Banner' />
         }
 
         <div className="category-header">

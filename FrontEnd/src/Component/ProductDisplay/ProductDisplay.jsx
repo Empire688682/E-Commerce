@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './ProductDisplay.css'
 import Star_Icon from '../Asset/star_icon.png';
 import Dull_Star_Icon from '../Asset/star_dull_icon.png';
+import { useGlobalContext } from '../../Context';
 
 const ProductDisplay = (props) => {
-    const {product, review} = props
+ const { addToCart } = useGlobalContext();
+    const {product, review} = props;
   return (
     <div className='product-display'>
       <div className="product-display-left">
@@ -46,7 +48,7 @@ const ProductDisplay = (props) => {
                 <li>XLM</li>
             </div>
         </div>
-        <button>Add to cart</button>
+        <button onClick={ ()=> addToCart(product.id)}>Add to cart</button>
         <div className="category">
             <h4>Category:</h4>
             {product.category}
