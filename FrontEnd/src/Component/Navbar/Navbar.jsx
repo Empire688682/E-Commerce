@@ -3,8 +3,10 @@ import Logo from '../Asset/logo.png';
 import Cart from '../Asset/cart_icon.png'
 import './Navbar.css'
 import { BrowserRouter as Router,Route, NavLink } from 'react-router-dom';
+import { useGlobalContext } from '../../Context';
 
 const Navbar = () => {
+  const {getcartValue} = useGlobalContext();
     const [menu, setMenu] = useState("Shop")
   return (
     <div className='navbar'>
@@ -28,7 +30,7 @@ const Navbar = () => {
         <NavLink style={{textDecoration:"none"}} to="/loginSignup"> <button>Login</button> </NavLink>
         <div className="cart-con">
         <NavLink style={{textDecoration:"none"}} to="/cart"><img src={Cart} alt="Img"/></NavLink>
-        <div className="menu-count">0</div>
+        <div className="menu-count">{getcartValue()}</div>
         </div>
       </div>
     </div>
