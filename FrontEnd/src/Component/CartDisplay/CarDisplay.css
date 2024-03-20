@@ -1,0 +1,97 @@
+.cart-display{
+    width: 90%;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+.cart-display-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.cart-display-heading::before{
+    position: absolute;
+    content: '';
+    background-color: rgb(143, 138, 138);
+    width: 100%;
+    height: 1.7px;
+    bottom: -10px;
+    left: 0;
+}
+.P-T{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.cart-display-heading h1{
+    font-size: 18px;
+}
+.cart-display-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.cart-display-content h2{
+    font-size: 18px;
+}
+.cart-display-content img{
+    width: 80px;
+}
+.P-T-siblings{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.P-T-siblings h2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    font-size: 16px;
+}
+.cart-display-content .remove-icon{
+    width: 20px;
+    cursor: pointer;
+}
+.main-total{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total-1{
+    flex-basis: 50%;
+}
+.total-2{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.total-2 div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.total-2 button{
+    max-width: 250px;
+    margin: 30px 0;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bolder;
+    justify-content: center;
+}
+.total-2 button:active{
+    background-color: black;
+    color: white;
+}
